@@ -39,6 +39,9 @@ public class MainActivity extends AppCompatActivity{
         final MyAdapter myAdapter = new MyAdapter(this,title, subtitle);
         listView.setAdapter(myAdapter);
 
+        Intent intent = getIntent();
+        subtitle = intent.getStringArrayExtra("strings");
+
         //button add alarm
         add = findViewById(R.id.button);
         add.setOnClickListener(new View.OnClickListener() {
