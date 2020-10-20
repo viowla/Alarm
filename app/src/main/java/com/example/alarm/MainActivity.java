@@ -34,9 +34,12 @@ public class MainActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //alarms list
         listView = findViewById(R.id.listView);
         final MyAdapter myAdapter = new MyAdapter(this,title, subtitle);
         listView.setAdapter(myAdapter);
+
+        //button add alarm
         add = findViewById(R.id.button);
         add.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,6 +49,7 @@ public class MainActivity extends AppCompatActivity{
             }
         });
 
+        //single list item click
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -54,10 +58,11 @@ public class MainActivity extends AppCompatActivity{
             }
         });
 
+        //long click list item
         listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, final int position, long id) {
-                final int which_item = position;
+
 
                 new AlertDialog.Builder(MainActivity.this)
                         .setIcon(android.R.drawable.ic_delete)
