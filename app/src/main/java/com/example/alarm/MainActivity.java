@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity{
     ListView listView;
     Button add;
     String[] title ={"8:00","12:00","9:00","6:15"};
-    String[] subtitle ={"Wake up","Lunch time","Sleeping"};
+    String[] subtitle ={"Wake up","Lunch time","Sleeping",""};
 
 
     @Override

@@ -28,7 +28,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="550dp"
-        android:text="New Alarm" />
+        android:text="New Alarm"
+        android:background="#018577"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        />
 
 
 </androidx.drawerlayout.widget.DrawerLayout>
